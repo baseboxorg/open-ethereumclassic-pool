@@ -1,15 +1,10 @@
+#!/bin/sh
 
+apt install -y software-properties-common git golang redis-server nodejs nginx npm
+add-apt-repository -y ppa:ethereum/ethereum
+apt update
 
-
-
-
-
-sudo apt-get install software-properties-common
-sudo add-apt-repository -y ppa:ethereum/ethereum
-sudo apt-get update
-sudo apt-get install git golang redis-server nodejs nginx npm
-
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+ln -s /usr/bin/nodejs /usr/bin/node
 
 git clone https://github.com/LeChuckDE/open-ethereumclassic-pool.git
 cd open-ethereumclassic-pool/
