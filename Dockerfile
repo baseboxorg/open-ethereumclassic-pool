@@ -2,10 +2,16 @@
 
 apt install -y software-properties-common 
 add-apt-repository -y ppa:ethereum/ethereum
+
+
+
 apt update
 apt install -y git golang redis-server nodejs nginx npm
 
 ln -s /usr/bin/nodejs /usr/bin/node
+
+export GOPATH=$HOME/workspace/OS/Ubuntu1604/Go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 git clone https://github.com/LeChuckDE/open-ethereumclassic-pool.git
 cd open-ethereumclassic-pool/
