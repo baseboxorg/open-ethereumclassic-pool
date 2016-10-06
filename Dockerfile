@@ -11,6 +11,9 @@ git clone https://github.com/LeChuckDE/open-ethereumclassic-pool.git
 cd open-ethereumclassic-pool/
 make
 
+git clone https://github.com/sammy007/open-ethereum-pool.git
+cd open-ethereum-pool
+make
 
 nano config.json
 cd www
