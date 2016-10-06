@@ -1,8 +1,9 @@
 #!/bin/sh
 
-apt install -y software-properties-common git golang redis-server nodejs nginx npm
+apt install -y software-properties-common 
 add-apt-repository -y ppa:ethereum/ethereum
 apt update
+apt install -y git golang redis-server nodejs nginx npm
 
 ln -s /usr/bin/nodejs /usr/bin/node
 
